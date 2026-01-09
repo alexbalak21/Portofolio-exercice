@@ -86,7 +86,6 @@ p {
 
 .topmenu:hover {
   color: white;
-  background-color: var(--primary-color);
   font-weight: bolder;
   text-decoration: underline;
 }
