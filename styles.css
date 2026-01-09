@@ -43,13 +43,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.profile_name {
-  font-size: 30px;
-  color: var(--primary-color);
-  font-weight: bold;
-  padding: 0.5rem 0;
-}
-
 /* Navigation */
 #navbar {
   display: flex;
@@ -58,10 +51,10 @@ p {
   padding: 1rem 2rem;
   background-color: var(--white);
   box-shadow: var(--shadow);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
-  width: 100%;
 }
 
 .name {
@@ -74,20 +67,6 @@ p {
   display: flex;
   list-style: none;
   gap: 2rem;
-}
-
-.topmenu {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  color: var(--text-color);
-}
-
-.topmenu:hover {
-  color: white;
-  font-weight: bolder;
-  text-decoration: underline;
 }
 
 #navbar a {
@@ -296,8 +275,8 @@ p {
   bottom: 2rem;
   right: 2rem;
   background-color: var(--primary-color);
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;

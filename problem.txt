@@ -1,0 +1,27 @@
+I have many errors on Plugin and Online IDE.
+When I go on those pages it show me :
+
+An error occurred while processing your request.
+Reference #30.c49c3a17.1767986006.aa0497ed
+
+https://errors.edgesuite.net/30.c49c3a17.1767986006.aa0497ed
+-----------------------------------------------------------------------------------
+An error occurred while processing your request.
+Reference #30.ca9b3e17.1767984702.d8ecc000
+
+https://errors.edgesuite.net/30.ca9b3e17.1767984702.d8ecc000
+---------------------------------------------------------------
+An error occurred while processing your request.
+Reference #30.ca9b3e17.1767984702.d8ecc000
+
+https://errors.edgesuite.net/30.ca9b3e17.1767984702.d8ecc000
+
+https://www.coursera.org/learn/getting-started-with-git-and-github/ungradedWidget/QJ3mM/reading-git-commands
+
+https://author.skills.network/courses/2274/labs/4125
+
+https://author.skills.network/courses/2274/labs/4126
+
+https://www.coursera.org/learn/getting-started-with-git-and-github/ungradedWidget/ip1GF/cheat-sheet-git-commands-and-managing-github-projects
+
+Everytime I go on those pages it gives me an error, I tried to refresh the page to restart the browser. Nothing...
