@@ -1,3 +1,24 @@
+// Show popup function
+function showPopup(show) {
+  const popup = document.getElementById("popup");
+  if (show) {
+    popup.classList.add("show");
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 3000);
+  } else {
+    popup.classList.remove("show");
+  }
+}
+
+// Popup button close functionality
+const popupBtn = document.getElementById("popup-btn");
+if (popupBtn) {
+  popupBtn.addEventListener("click", function () {
+    showPopup(false);
+  });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -53,8 +74,8 @@ if (recommendationForm) {
     // Add the new recommendation to the list
     recommendationsList.appendChild(newRecommendation);
 
-    // Show success message
-    alert("Thank you for your recommendation!");
+    // Show popup message
+    showPopup(true);
 
     // Reset the form
     this.reset();
