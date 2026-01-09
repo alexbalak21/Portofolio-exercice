@@ -43,6 +43,13 @@ p {
   margin-bottom: 1rem;
 }
 
+.profile_name {
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
 /* Navigation */
 #navbar {
   display: flex;
@@ -51,10 +58,10 @@ p {
   padding: 1rem 2rem;
   background-color: var(--white);
   box-shadow: var(--shadow);
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .name {
@@ -67,6 +74,21 @@ p {
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+
+.topmenu {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.topmenu:hover {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 #navbar a {
@@ -123,7 +145,7 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
-  min-width: 0;
+  align-items: start;
 }
 
 /* Updated Skill Card */
@@ -136,13 +158,17 @@ p {
   box-shadow: var(--shadow);
   transform: translateY(0);
   will-change: transform;
-  display: block;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
 }
 
 .skill:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
 }
 
 /* Icon styling */
@@ -241,6 +267,7 @@ p {
   border: 1px solid #d1d5db;
   border-radius: 0.25rem;
   font-size: 1rem;
+  display: block;
 }
 
 .recommendation-form textarea {
@@ -248,7 +275,7 @@ p {
   resize: vertical;
 }
 
-.recommendation-form button {
+#recommend_btn {
   background-color: var(--primary-color);
   color: white;
   padding: 0.75rem 1.5rem;
@@ -257,9 +284,10 @@ p {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.recommendation-form button:hover {
+#recommend_btn:hover {
   background-color: var(--secondary-color);
 }
 
@@ -269,39 +297,37 @@ p {
   bottom: 2rem;
   right: 2rem;
   background-color: var(--primary-color);
-  color: white;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   z-index: 1000;
 }
 
 .home-icon:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   background-color: var(--secondary-color);
+  transform: translateY(-3px);
 }
 
 /* Popup */
 .popup {
   display: none;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white);
   padding: 2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 15px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   z-index: 2000;
   text-align: center;
   min-width: 300px;
+  border: 2px solid var(--primary-color);
 }
 
 .popup.show {
@@ -326,6 +352,12 @@ p {
 }
 
 .popup-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.home-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   background-color: var(--secondary-color);
 }
 

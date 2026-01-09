@@ -12,12 +12,13 @@
   <body>
     <!-- Navigation -->
     <nav id="navbar">
-      <div class="name">Alex Johnson</div>
+      <div class="profile_name">Alex Johnson</div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#home" class="topmenu">Home</a></li>
+        <li><a href="#about" class="topmenu">About</a></li>
+        <li><a href="#skills" class="topmenu">Skills</a></li>
+        <li><a href="#projects" class="topmenu">Projects</a></li>
+        <li><a href="#recommendations" class="topmenu">Recommendations</a></li>
       </ul>
     </nav>
 
@@ -132,11 +133,9 @@
       <!-- Recommendation Form -->
       <div class="recommendation-form">
         <h3>Leave a Recommendation</h3>
-        <form id="recommendation-form">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <textarea id="message" placeholder="Your Recommendation" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea id="message" placeholder="Your Recommendation" required></textarea>
+        <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
       </div>
     </section>
 
@@ -147,8 +146,19 @@
     </div>
 
     <!-- Home Icon -->
-    <a href="#" class="home-icon" id="home-icon">
-      <i class="fas fa-home"></i>
+    <a href="#navbar" class="home-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        width="63px">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
     </a>
 
     <script src="script.js"></script>
