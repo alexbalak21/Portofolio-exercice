@@ -132,10 +132,7 @@ p {
   padding: 1.5rem;
   border-radius: 0.5rem;
   text-align: center;
-  transition: all 0.3s ease;
   box-shadow: var(--shadow);
-  transform: translateY(0);
-  will-change: transform;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,8 +141,7 @@ p {
 }
 
 .skill:hover {
-  transform: translateY(-10px) !important;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 

@@ -118,9 +118,9 @@ window.addEventListener("load", () => {
   document.querySelector("nav a").classList.add("active");
 });
 
-// Add animation on scroll
+// Add animation on scroll for projects and recommendations
 const animateOnScroll = () => {
-  const elements = document.querySelectorAll(".skill, .project, .recommendation");
+  const elements = document.querySelectorAll(".project, .recommendation");
 
   elements.forEach((element) => {
     const elementPosition = element.getBoundingClientRect().top;
@@ -135,7 +135,7 @@ const animateOnScroll = () => {
 
 // Set initial styles for animation
 window.addEventListener("load", () => {
-  const elements = document.querySelectorAll(".skill, .project, .recommendation");
+  const elements = document.querySelectorAll(".project, .recommendation");
   elements.forEach((element) => {
     element.style.opacity = "0";
     element.style.transform = "translateY(20px)";
