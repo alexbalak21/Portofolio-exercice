@@ -1,165 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-      <div class="name">NAME</div>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#recommendations">Recommendations</a></li>
-      </ul>
-    </nav>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="about-content">
-        <img src="img/Aatar.png" alt="Alex Johnson" class="profile-img" />
-        <div class="about-text">
-          <h1>Hi, I'm Alex Johnson</h1>
-          <p>
-            I am a passionate web developer with 3 years of experience in creating responsive and
-            user-friendly websites. I specialize in front-end development and love turning ideas
-            into reality through code. When I'm not coding, you can find me hiking, reading tech
-            blogs, or exploring new coffee shops.
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="name">NAME</div>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="about-content">
+      <img src="img/Aatar.png" alt="Alex Johnson" class="profile-img" />
+      <div class="about-text">
+        <h1>Hi, I'm Alex Johnson</h1>
+        <p>
+          I'm a passionate full-stack developer with a strong focus on backend engineering.
+          I build user-ready applications using Java <b>Spring Boot</b>, Python <b>Flask</b>, or PHP <b>Laravel</b> on
+          the backend, paired
+          with <b>React</b> and other modern web technologies on the frontend.
+          I enjoy turning complex ideas into efficient, intuitive, and easy-to-use solutions that fits my client's
+          needs.
+        </p>
+        <p>
+          When I'm not deep in code, you'll usually find me at the gym, out on a hike, reading tech blogs, or
+          discovering new coffee shops.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <i class="fas fa-leaf"></i>
-          <span class="skill-name">Spring Boot</span>
-          <span class="experience">2 years of experience</span>
-        </div>
-        <div class="skill">
-          <i class="fab fa-html5"></i>
-          <span class="skill-name">HTML5</span>
-          <span class="experience">2 years of experience</span>
-        </div>
-        <div class="skill">
-          <i class="fab fa-css3-alt"></i>
-          <span>CSS3</span>
-          <span class="experience">2 years of experience</span>
-        </div>
-        <div class="skill">
-          <i class="fab fa-js"></i>
-          <span>JavaScript</span>
-          <span class="experience">2 years of experience</span>
-        </div>
-        <div class="skill">
-          <i class="fab fa-react"></i>
-          <span>React</span>
-          <span class="experience">2 years of experience</span>
-        </div>
-        <div class="skill">
-          <i class="fas fa-database"></i>
-          <span>SQL</span>
-          <span class="experience">2 years of experience</span>
-        </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fas fa-leaf"></i>
+        <span class="skill-name">Spring Boot</span>
+        <span class="experience">2 years of experience</span>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3>E-commerce Website</h3>
-          <p>
-            Built a full-stack e-commerce platform with React and Node.js, featuring user
-            authentication and payment integration.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Task Management App</h3>
-          <p>
-            Developed a task management application with drag-and-drop functionality using React and
-            Firebase.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Weather Dashboard</h3>
-          <p>
-            Created a weather application that displays current weather and forecast using a
-            third-party weather API.
-          </p>
-        </div>
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <span class="skill-name">HTML5</span>
+        <span class="experience">2 years of experience</span>
       </div>
-    </section>
-
-    <!-- Recommendations Section -->
-    <section id="recommendations" class="section">
-      <h2>Recommendations</h2>
-      <div class="recommendations-container" id="recommendations-list">
-        <div class="recommendation">
-          <p>
-            "Alex is an excellent developer with a keen eye for detail. His problem-solving skills
-            are exceptional."
-          </p>
-          <p class="recommender">- Sarah Williams, Senior Developer at TechCorp</p>
-        </div>
-        <div class="recommendation">
-          <p>
-            "Working with Alex was a great experience. He delivered the project ahead of schedule
-            with great quality."
-          </p>
-          <p class="recommender">- Michael Chen, Project Manager at WebSolutions</p>
-        </div>
-        <div class="recommendation">
-          <p>
-            "Alex's ability to understand requirements and implement them effectively is
-            impressive."
-          </p>
-          <p class="recommender">- Emily Davis, UX Designer at CreativeMinds</p>
-        </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS3</span>
+        <span class="experience">2 years of experience</span>
       </div>
-
-      <!-- Recommendation Form -->
-      <div class="recommendation-form">
-        <h3>Leave a Recommendation</h3>
-        <input type="text" id="name" placeholder="Your Name" required />
-        <textarea id="message" placeholder="Your Recommendation" required></textarea>
-        <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+      <div class="skill">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+        <span class="experience">2 years of experience</span>
       </div>
-    </section>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <span>React</span>
+        <span class="experience">2 years of experience</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <span>SQL</span>
+        <span class="experience">2 years of experience</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Popup -->
-    <div id="popup" class="popup">
-      <p>Thank you for your recommendation!</p>
-      <button id="popup-btn" class="popup-btn">OK</button>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="experience-container">
+      <div class="experience">
+        <h3>Front-End Developer</h3>
+        <p>TechCorp, 2021 - Present</p>
+        <p>
+          Developed responsive web applications using HTML, CSS, and JavaScript. Collaborated with
+          design teams to implement user interfaces and improved site performance by 30%.
+        </p>
+      </div>
+      <div class="experience">
+        <h3>Junior Web Developer</h3>
+        <p>WebSolutions, 2019 - 2021</p>
+        <p>
+          Built and maintained websites for clients using React and Node.js. Participated in code
+          reviews and contributed to open-source projects.
+        </p>
+      </div>
+      <div class="experience">
+        <h3>Intern Developer</h3>
+        <p>CreativeMinds, 2018 - 2019</p>
+        <p>
+          Assisted in developing web prototypes and learned best practices in front-end development.
+          Gained experience with version control and agile methodologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>E-commerce Website</h3>
+        <p>
+          Built a full-stack e-commerce platform with React and Node.js, featuring user
+          authentication and payment integration.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Task Management App</h3>
+        <p>
+          Developed a task management application with drag-and-drop functionality using React and
+          Firebase.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Weather Dashboard</h3>
+        <p>
+          Created a weather application that displays current weather and forecast using a
+          third-party weather API.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="section">
+    <h2>Recommendations</h2>
+    <div class="recommendations-container" id="recommendations-list">
+      <div class="recommendation">
+        <p>
+          "Alex is an excellent developer with a keen eye for detail. His problem-solving skills
+          are exceptional."
+        </p>
+        <p class="recommender">- Sarah Williams, Senior Developer at TechCorp</p>
+      </div>
+      <div class="recommendation">
+        <p>
+          "Working with Alex was a great experience. He delivered the project ahead of schedule
+          with great quality."
+        </p>
+        <p class="recommender">- Michael Chen, Project Manager at WebSolutions</p>
+      </div>
+      <div class="recommendation">
+        <p>
+          "Alex's ability to understand requirements and implement them effectively is
+          impressive."
+        </p>
+        <p class="recommender">- Emily Davis, UX Designer at CreativeMinds</p>
+      </div>
     </div>
 
-    <!-- Home Icon -->
-    <a href="#navbar" class="home-icon">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="white"
-        width="63px">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
+    <!-- Recommendation Form -->
+    <div class="recommendation-form">
+      <h3>Leave a Recommendation</h3>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="message" placeholder="Your Recommendation" required></textarea>
+      <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p>Thank you for your recommendation!</p>
+    <button id="popup-btn" class="popup-btn">OK</button>
+  </div>
+
+  <!-- Home Icon -->
+  <a href="#navbar" class="home-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+      width="63px">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

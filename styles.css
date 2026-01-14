@@ -84,7 +84,7 @@ p {
 
 /* About Section */
 #about {
-  margin-top: 4rem;
+  margin-top: 6em;
   background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
@@ -174,6 +174,37 @@ p {
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   margin-top: 0.5rem;
+}
+
+/* Experience Section */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+}
+
+.experience h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.experience p:first-of-type {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 1rem;
 }
 
 /* Projects Section */
@@ -362,6 +393,7 @@ p {
   }
 
   .skills-container,
+  .experience-container,
   .projects-container,
   .recommendations-container {
     grid-template-columns: 1fr;

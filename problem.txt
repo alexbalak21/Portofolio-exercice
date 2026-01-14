@@ -10,9 +10,11 @@ An error occurred while processing your request.
 Reference #30.ca9b3e17.1767984702.d8ecc000
 
 https://errors.edgesuite.net/30.ca9b3e17.1767984702.d8ecc000
----------------------------------------------------------------
+-----------------------------------------------------------------------------
 An error occurred while processing your request.
 Reference #30.ca9b3e17.1767984702.d8ecc000
+
+Url of the pages were the error occurs :
 
 https://errors.edgesuite.net/30.ca9b3e17.1767984702.d8ecc000
 
@@ -24,4 +26,8 @@ https://author.skills.network/courses/2274/labs/4126
 
 https://www.coursera.org/learn/getting-started-with-git-and-github/ungradedWidget/ip1GF/cheat-sheet-git-commands-and-managing-github-projects
 
-Everytime I go on those pages it gives me an error, I tried to refresh the page to restart the browser. Nothing...
+Every time I go on those pages it gives me an error, I tried to refresh the page to restart the browser. Nothing...
+
+I tried with another browser it dose not work either. This problem is blocking me I can not advance or pass assignments.
+Please fix it.
+Thank you for your help.
