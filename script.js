@@ -57,6 +57,60 @@ if (popupBtn) {
   });
 }
 
+// Contact form submission handler
+function sendEmail(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('contactName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('contactMessage').value.trim();
+  
+  // Basic validation
+  if (!name || !email || !subject || !message) {
+    alert('Please fill in all fields');
+    return;
+  }
+  
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  
+  // Here you would typically send the form data to a server
+  // For now, we'll just show a success message
+  const popup = document.getElementById('popup');
+  const popupMessage = popup.querySelector('p');
+  popupMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+  showPopup(true);
+  
+  // Reset the form
+  event.target.reset();
+  
+  // In a real application, you would send the data to your server here
+  // Example using fetch:
+  /*
+  fetch('/send-email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, subject, message })
+  })
+  .then(response => response.json())
+  .then(data => {
+    showPopup(true);
+    event.target.reset();
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    alert('There was an error sending your message. Please try again later.');
+  });
+  */
+}
+
 // Add recommendation function
 function addRecommendation() {
   const nameInput = document.getElementById("name");

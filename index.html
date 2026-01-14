@@ -173,12 +173,24 @@
         </div>
       </div>
 
-      <!-- Recommendation Form -->
-      <div class="recommendation-form">
-        <h3>Leave a Recommendation</h3>
-        <input type="text" id="name" placeholder="Your Name" required />
-        <textarea id="message" placeholder="Your Recommendation" required></textarea>
-        <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Contact Me</h3>
+        <form id="contactForm" onsubmit="sendEmail(event)">
+          <div class="form-group">
+            <input type="text" id="contactName" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <textarea id="contactMessage" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
       </div>
     </section>
 
